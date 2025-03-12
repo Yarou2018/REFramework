@@ -509,7 +509,7 @@ REFramework::REFramework(HMODULE reframework_module)
     IntegrityCheckBypass::immediate_patch_re4();
 #endif
 
-#if defined(DD2) || TDB_VER >= 74
+#if defined(DD2) && TDB_VER >= 74
     // Fixes new code added in DD2 only. Maybe >= TDB73 too. Probably will change.
     IntegrityCheckBypass::immediate_patch_dd2();
 #endif
